@@ -8,7 +8,7 @@
 ---
 
 ## 👥 Integrantes
-* **Diego Murgana** (diex27) - *Administrador del Proyecto*
+* **Diego Murgana** - *Administrador del Proyecto*
 * **Leandro Sosa**
 * **Agustín Senin**
 * **Santiago Padilla**
@@ -34,12 +34,16 @@
 
 ## 📖 Desarrollo del Cuestionario
 
+---
+
 ### 1. ¿Qué es una VLAN?
 **Punto clave:** Una **VLAN** (Virtual Local Area Network) es una subdivisión lógica de una red física local que permite agrupar dispositivos como si estuvieran en la misma red.
 
 
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 2. ¿Qué es una VPN?
 **Punto clave:** Una **VPN** (Virtual Private Network) es una tecnología que crea un túnel cifrado y seguro sobre una red pública.
@@ -51,6 +55,8 @@
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
+---
+
 ### 3. ¿Qué es una SAN?
 **Punto clave:** Una **SAN** (Storage Area Network) es una red de alta velocidad diseñada para conectar servidores a almacenamiento masivo.
 
@@ -60,6 +66,8 @@
 
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 4. Diferencias entre un Hub, Repetidor, Router y SWITCH
 **Punto clave:** Estos dispositivos operan en diferentes capas del modelo OSI y tienen distintos niveles de inteligencia.
@@ -73,34 +81,56 @@
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
+---
+
 ### 5. ¿Qué es un protocolo de comunicaciones?
 **Punto clave:** Conjunto de reglas que permiten que dos o más entidades se comuniquen entre sí compartiendo sintaxis y semántica.
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
+---
+
 ### 6. Explique TCP/IP y NetBios, resuma sus diferencias.
 *Contenido en desarrollo...*
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 7. ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un “flag” en un paquete de TCP/IP?
 *Contenido en desarrollo...*
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 8. Defina la red según su geografía. Explicar distintas variantes.
 *Contenido en desarrollo...*
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 9. Defina una red según su topología. Explicar distintas variantes.
 *Contenido en desarrollo...*
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 10. Explicar el servicio de DHCP.
 *Contenido en desarrollo...*
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 11. Explicar el servicio de DNS.
 *Contenido en desarrollo...*
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
+
+---
 
 ### 12. Explicar las tecnologías Wireless, y sus estándares.
 *Contenido en desarrollo...*

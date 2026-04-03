@@ -18,52 +18,70 @@
 ## 📍 Índice de Contenidos
 | | | |
 | :--- | :--- | :--- |
-| 1. [VLAN](#1-qué-es-una-vlan) | 12. [Capa 2 (Enlace)](#12-capa-de-enlace) | 23. [Protocolo ICMP](#23-protocolo-icmp) |
-| 2. [VPN](#2-qué-es-una-vpn) | 13. [Capa 3 (Red)](#13-capa-de-red) | 24. [Protocolo ARP](#24-protocolo-arp) |
-| 3. [SAN](#3-qué-es-una-san) | 14. [Capa 4 (Transporte)](#14-capa-de-transporte) | 25. [Puertos Lógicos](#25-puertos-lógicos) |
-| 4. [Dispositivos](#4-diferencias-entre-hub-repetidor-router-y-switch) | 15. [Capa 5 (Sesión)](#15-capa-de-sesión) | 26. [HTTP vs HTTPS](#26-http-vs-https) |
-| 5. [Protocolos](#5-qué-es-un-protocolo-de-comunicaciones) | 16. [Capa 6 (Presentación)](#16-capa-de-presentación) | 27. [DNS](#27-dns) |
-| 6. [Modelo OSI](#6-modelo-osi) | 17. [Capa 7 (Aplicación)](#17-capa-de-aplicación) | 28. [DHCP](#28-dhcp) |
-| 7. [OSI vs TCP/IP](#7-modelo-osi-vs-tcpip) | 18. [TCP vs UDP](#18-tcp-vs-udp) | 29. [Firewall](#29-firewall) |
-| 8. [Topologías](#8-topologías-de-red) | 19. [Dirección IP](#19-dirección-ip) | 30. [Proxy](#30-proxy) |
-| 9. [Medios de Transmisión](#9-medios-de-transmisión) | 20. [Máscara de Red](#20-máscara-de-red) | 31. [Criptografía](#31-criptografía) |
-| 10. [Unidades de Medida](#10-unidades-de-medida) | 21. [Gateway](#21-gateway) | 32. [Nube (Cloud)](#32-cloud-computing) |
-| 11. [Capa 1 (Física)](#11-capa-física) | 22. [Subnetting](#22-subnetting) | 33. [Seguridad](#33-seguridad-en-redes) |
+| 1. [VLAN](#1-qué-es-una-vlan) | 12. [Wireless y Estándares](#12-explicar-las-tecnologías-wireless-y-sus-estándares) | 23. [Solución Microsoft Teams](#23-explique-la-solución-de-microsoft-teams) |
+| 2. [VPN](#2-qué-es-una-vpn) | 13. [¿Qué es un Proxy?](#13-qué-es-un-proxy) | 24. [Calidad en Enlace MPLS](#24-qué-significa-aplicar-calidad-en-un-enlace-mpls) |
+| 3. [SAN](#3-qué-es-una-san) | 14. [Spanning Tree](#14-explicar-el-protocolo-spanning-tree) | 25. [Coaxial, UTP o Fibra](#25-qué-diferencias-puede-encontrar-entre-una-conexión-coaxial-utp-o-fibra) |
+| 4. [Dispositivos de Red](#4-diferencias-entre-un-hub-repetidor-router-y-switch) | 15. [Protocolo OSPF](#15-explicar-el-protocolo-de-comunicaciones-ospf) | 26. [Certificaciones Cisco](#26-según-cisco-qué-significa-ccent-ccna-y-ccnp) |
+| 5. [Protocolo de Comuna.](#5-qué-es-un-protocolo-de-comunicaciones) | 16. [Protocolo ARP](#16-explicar-el-protocolo-arp) | 27. [Modelo OSI](#27-explique-el-modelo-osi) |
+| 6. [TCP/IP y NetBios](#6-explique-tcpip-y-netbios-resuma-sus-diferencias) | 17. [¿Qué es un Firewall?](#17-qué-es-un-firewall) | 28. [Estándar IEEE 802.3](#28-explicar-el-estándar-ieee-8023-regula-la-red) |
+| 7. [Paquete TCP/IP y Flags](#7-cómo-está-formado-un-paquete-de-datos-en-tcpip-qué-es-un-flag-en-un-paquete-de-tcpip) | 18. [¿Qué es una DMZ?](#18-qué-es-una-dmz) | 29. [Estándar IEEE 802.4](#29-explicar-el-estándar-ieee-8024-regula-la-red) |
+| 8. [Red según Geografía](#8-defina-la-red-según-su-geografía-explicar-distintas-variantes) | 19. [¿Qué es un Gateway?](#19-qué-es-un-gateway) | 30. [Protocolos de envío/recepción de correo](#30-qué-protocolos-se-usan-para-enviar-y-recibir-correo) |
+| 9. [Red según Topología](#9-defina-una-red-según-su-topología-explicar-distintas-variantes) | 20. [Significado de NBL](#20-según-microsoft-qué-significa-nbl) | 31. [Protocolo para leer correo](#31-qué-protocolo-puede-usarse-para-leer-correo-recibido) |
+| 10. [Servicio DHCP](#10-explicar-el-servicio-de-dhcp) | 21. [Tipos de enlace](#21-tipos-de-enlace-mpls-lan-to-lan-microonda-vsat) | 32. [Diferencias IPv4 e IPv6](#32-diferencias-entre-ipv4-e-ipv6) |
+| 11. [Servicio DNS](#11-explicar-el-servicio-de-dns) | 22. [Tecnología LTE](#22-describir-la-tecnología-lte) | 33. [Experiencia Personal](#33-individual-para-cada-integrante-del-grupo-qué-experiencia-tienen-en-redes) |
 
 ---
 
 ## 📖 Desarrollo del Cuestionario
 
 ### 1. ¿Qué es una VLAN?
-**Punto clave:** Subdivisión lógica de una red física.
-[Contenido...]
+**Punto clave:** Una **VLAN** (Virtual Local Area Network) es una subdivisión lógica de una red física local que permite agrupar dispositivos como si estuvieran en la misma red.
+
+
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
 ### 2. ¿Qué es una VPN?
-**Punto clave:** Túnel cifrado sobre red pública.
-[Contenido...]
+**Punto clave:** Una **VPN** (Virtual Private Network) es una tecnología que crea un túnel cifrado y seguro sobre una red pública.
+
+
+
+[Image of VPN tunnel encrypted connection]
+
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
 ### 3. ¿Qué es una SAN?
-**Punto clave:** Red de alta velocidad para almacenamiento.
-[Contenido...]
+**Punto clave:** Una **SAN** (Storage Area Network) es una red de alta velocidad diseñada para conectar servidores a almacenamiento masivo.
+
+
+
+[Image of SAN architecture diagram]
+
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
-### 4. Diferencias entre Hub, Repetidor, Router y Switch
-**Punto clave:** Distintos niveles de inteligencia en capas OSI.
-[Contenido...]
+### 4. Diferencias entre un Hub, Repetidor, Router y SWITCH
+**Punto clave:** Estos dispositivos operan en diferentes capas del modelo OSI y tienen distintos niveles de inteligencia.
+
+| Dispositivo | Capa OSI | Inteligencia |
+| :--- | :--- | :--- |
+| **Repetidor** | 1 | Nula |
+| **Hub** | 1 | Baja |
+| **Switch** | 2 | Media |
+| **Router** | 3 | Alta |
+
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
 ### 5. ¿Qué es un protocolo de comunicaciones?
-**Punto clave:** Conjunto de reglas que permiten que dos o más entidades de un sistema de comunicación se comuniquen entre sí.
-
-
-
-**Explicación técnica:**
-* **Sintaxis:** Cómo se estructuran los datos.
-* **Semántica:** Qué significa cada sección de los datos.
-* **Sincronización:** En qué momento y a qué velocidad deben enviarse los datos.
+**Punto clave:** Conjunto de reglas que permiten que dos o más entidades se comuniquen entre sí compartiendo sintaxis y semántica.
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
-*(Continuar con las demás preguntas...)*
+### 33. Individual para cada integrante del grupo: ¿Qué experiencia tienen en redes?
+* **Diego Murgana:** *Completar aquí*
+* **Leandro Sosa:** *Completar aquí*
+* **Agustín Senin:** *Completar aquí*
+* **Santiago Padilla:** *Completar aquí*
+
+[⬆ Volver al Índice](#-índice-de-contenidos)

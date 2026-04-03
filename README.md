@@ -38,7 +38,7 @@
 ### 1. ¿Qué es una VLAN?
 **Punto clave:** Una **VLAN** (Virtual Local Area Network) es una subdivisión lógica de una red física local que permite agrupar dispositivos como si estuvieran en la misma red.
 
-
+![Diagrama de segmentación lógica de una VLAN](vlan-diagrama.png)
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
 

@@ -78,6 +78,114 @@
 
 [⬆ Volver al Índice](#-índice-de-contenidos)
 
+### 6. Explique TCP/IP y NetBios, resuma sus diferencias.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 7. ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un “flag” en un paquete de TCP/IP?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 8. Defina la red según su geografía. Explicar distintas variantes.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 9. Defina una red según su topología. Explicar distintas variantes.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 10. Explicar el servicio de DHCP.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 11. Explicar el servicio de DNS.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 12. Explicar las tecnologías Wireless, y sus estándares.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 13. ¿Qué es un Proxy?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 14. Explicar el protocolo Spanning tree.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 15. Explicar el protocolo de comunicaciones OSPF.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 16. Explicar el protocolo ARP.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 17. ¿Qué es un Firewall?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 18. ¿Qué es una DMZ?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 19. ¿Qué es un Gateway?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 20. Según Microsoft, ¿qué significa NBL?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 21. Tipos de enlace: MPLS, LAN to LAN, microonda, VSAT.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 22. Describir la tecnología LTE.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 23. Explique la solución de Microsoft Teams.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 24. ¿Qué significa aplicar calidad en un enlace MPLS?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 25. ¿Qué diferencias puede encontrar entre una conexión Coaxial, UTP o Fibra?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 26. Según Cisco, ¿qué significa CCENT, CCNA y CCNP?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 27. Explique el modelo OSI.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 28. Explicar el estándar IEEE 802.3 regula la red.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 29. Explicar el estándar IEEE 802.4 regula la red.
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 30. ¿Qué protocolos se usan para enviar y recibir correo?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 31. ¿Qué protocolo puede usarse para leer correo recibido?
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
+### 32. Diferencias entre IPV4 e IPV6
+*Contenido en desarrollo...*
+[⬆ Volver al Índice](#-índice-de-contenidos)
+
 ### 33. Individual para cada integrante del grupo: ¿Qué experiencia tienen en redes?
 * **Diego Murgana:** *Completar aquí*
 * **Leandro Sosa:** *Completar aquí*

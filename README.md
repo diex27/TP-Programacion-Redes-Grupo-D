@@ -46,6 +46,8 @@
 * **Acceso a Nivel de Bloques:** A diferencia de un NAS, la SAN permite que el sistema operativo vea los discos remotos como si estuvieran conectados localmente.
 * **Alta Disponibilidad:** Permite compartir el almacenamiento entre múltiples servidores, facilitando copias de seguridad y redundancia.
 
+---
+
 ### 4. Diferencias entre Hub, Repetidor, Router y Switch
 
 **Punto clave:** Estos dispositivos operan en diferentes capas del modelo OSI y tienen distintos niveles de "inteligencia" para manejar los datos en una red.

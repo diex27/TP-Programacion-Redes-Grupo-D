@@ -8,7 +8,7 @@
 ---
 
 ## 👥 Integrantes
-* **Diego Murgana** (diex27) - *Administrador del Proyecto*
+* **Diego Murgana** - *Administrador del Proyecto*
 * **Leandro Sosa**
 * **Agustín Senin**
 * **Santiago Padilla**

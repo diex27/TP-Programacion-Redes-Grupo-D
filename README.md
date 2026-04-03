@@ -45,3 +45,20 @@
 * **Red Dedicada:** Funciona de forma independiente a la red de área local (LAN) para no congestionarla con el tráfico de datos pesados.
 * **Acceso a Nivel de Bloques:** A diferencia de un NAS, la SAN permite que el sistema operativo vea los discos remotos como si estuvieran conectados localmente.
 * **Alta Disponibilidad:** Permite compartir el almacenamiento entre múltiples servidores, facilitando copias de seguridad y redundancia.
+
+### 4. Diferencias entre Hub, Repetidor, Router y Switch
+
+**Punto clave:** Estos dispositivos operan en diferentes capas del modelo OSI y tienen distintos niveles de "inteligencia" para manejar los datos en una red.
+
+| Dispositivo | Capa OSI | Función Principal | Inteligencia |
+| :--- | :--- | :--- | :--- |
+| **Repetidor** | Física (1) | Regenera la señal eléctrica para extender la distancia del cableado. | Nula (solo amplifica). |
+| **Hub** | Física (1) | Conecta varios equipos en forma de estrella; todo lo que recibe lo reenvía a todos los puertos (Broadcast). | Baja (genera colisiones). |
+| **Switch** | Enlace (2) | Conecta equipos en una LAN y envía los datos solo al destinatario correcto usando direcciones MAC. | Media (aprende rutas). |
+| **Router** | Red (3) | Interconecta diferentes redes (ej. tu casa con Internet) y decide el mejor camino usando direcciones IP. | Alta (toma decisiones). |
+
+
+**Diferencias principales:**
+* **Hub vs. Switch:** El Hub es un "difusor" pasivo (envía a todos), mientras que el Switch es "selectivo" (envía solo al destino), lo que lo hace mucho más rápido y seguro.
+* **Switch vs. Router:** El Switch une computadoras dentro de una misma red; el Router une esa red con otras redes externas.
+* **Repetidor:** Es el más simple de todos, solo sirve para que la señal no se pierda en distancias largas.

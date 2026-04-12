@@ -458,7 +458,7 @@ Un **Firewall** es un sistema de seguridad de red diseñado para monitorizar y c
 <br></br>
 
 <p align="center">
-  <img src="img/p17-firewall.png" alt="Esquema de funcionamiento de un Firewall" width="80%">
+  <img src="img/p17-firewall.png" alt="Esquema de funcionamiento de un Firewall" width="60%">
 </p>
 
 <br></br>
@@ -615,8 +615,8 @@ Según los estándares de **Cisco**, LTE permitió la verdadera explosión del e
 * **Integración con SharePoint y OneDrive:** Teams utiliza estos servicios para gestionar el almacenamiento y la seguridad de los archivos compartidos.
 * **Canales y Equipos:** Permite organizar la comunicación por proyectos o departamentos, manteniendo la información estructurada y accesible.
 
-**Dato técnico relevante:**
-A diferencia de aplicaciones de chat personales, Teams utiliza protocolos de seguridad de grado empresarial, incluyendo autenticación multifactor (MFA) y cifrado de datos tanto en tránsito como en reposo, cumpliendo con estándares internacionales de cumplimiento.
+> **Dato técnico relevante:**
+> A diferencia de aplicaciones de chat personales, Teams utiliza protocolos de seguridad de grado empresarial, incluyendo autenticación multifactor (MFA) y cifrado de datos tanto en tránsito como en reposo, cumpliendo con estándares internacionales de cumplimiento.
 
 
 
@@ -624,37 +624,94 @@ A diferencia de aplicaciones de chat personales, Teams utiliza protocolos de seg
 
 ---
 
-### 24. ¿Qué significa aplicar calidad en un enlace MPLS?
+## 24. ¿Qué significa aplicar calidad en un enlace MPLS?
 
-<img src="img/p24-qos-mpls.png" width="35%" align="right" style="margin-left: 15px;">
+Antes de hablar de calidad, debemos definir que **MPLS** (Multi-Protocol Label Switching) es una tecnología de transporte de datos que utiliza **etiquetas** en lugar de direcciones de red para encaminar el tráfico. Esto permite crear redes privadas (VPNs de Capa 2 o 3) con un rendimiento muy superior al internet convencional.
 
-**Punto clave:** *Contenido en desarrollo...*
+**¿Qué significa aplicar calidad (QoS) en un enlace MPLS?**
+Significa configurar reglas de **Calidad de Servicio** para priorizar el tráfico crítico. Según los estándares de **Cisco**, esto es vital para gestionar los recursos de la red de forma inteligente.
 
-**Explicación técnica:** *Contenido en desarrollo...*
+**¿Cómo se aplica esta prioridad?**
+La red clasifica los paquetes y les asigna un nivel de importancia:
+1. **Tráfico de Tiempo Real (Voz y Video):** Tienen la prioridad más alta para evitar cortes o retrasos (Latencia).
+2. **Tráfico de Aplicaciones Críticas:** Como las bases de datos o el sistema de gestión de la empresa.
+3. **Tráfico de "Mejor Esfuerzo" (Best Effort):** Navegación web o descargas, que pueden esperar si la red está saturada.
 
-<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+> **Dato extra:**
+> QoS (Quality of Service o Calidad de Servicio) es el conjunto de tecnologías que actúan como un "director de tránsito" en una red. Su función es identificar qué paquetes de datos son urgentes (como una videollamada) y cuáles pueden esperar (como un correo electrónico), para darles prioridad y asegurar que el servicio importante no se corte.
 
----
-
-### 25. Diferencias entre Coaxial, UTP y Fibra
-
-<img src="img/p25-cables.png" width="35%" align="right" style="margin-left: 15px;">
-
-**Punto clave:** *Contenido en desarrollo...*
-
-**Explicación técnica:** *Contenido en desarrollo...*
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 26. Según Cisco, ¿qué significa CCENT, CCNA y CCNP?
+## 25. Diferencias entre Coaxial, UTP y Fibra
 
-<img src="img/p26-cisco-cert.png" width="35%" align="right" style="margin-left: 15px;">
+Para elegir el cableado correcto, debemos considerar la distancia, el ancho de banda necesario y el entorno (si hay mucha interferencia eléctrica).
+<br></br>
+<p align="center">
+  <img src="img/p25-cables.png" alt="Comparativa de cables: Par trenzado, Fibra Óptica y Coaxial" width="60%">
+  <br>
+  <em>En la imagen se observan (de arriba hacia abajo): el cable UTP con sus pares trenzados, el cable de Fibra Óptica con sus hilos de vidrio y el cable Coaxial con su núcleo de cobre y malla protectora.</em>
+</p>
+<br></br>
 
-**Punto clave:** *Contenido en desarrollo...*
+#### Comparativa Técnica
 
-**Explicación técnica:** *Contenido en desarrollo...*
+| Característica | Cable Coaxial | Cable UTP (Par Trenzado) | Fibra Óptica |
+| :--- | :--- | :--- | :--- |
+| **Medio de transmisión** | Electricidad | Electricidad | **Luz (Pulsos de láser/LED)** |
+| **Velocidad máxima** | Hasta 1 Gbps (aprox.) | Hasta 10 Gbps (Cat 6a/7) | **+100 Gbps** |
+| **Distancia máxima** | ~500 metros | **100 metros** (Límite crítico) | Decenas de kilómetros |
+| **Interferencia (EMI)** | Resistente (por la malla) | Sensible (sin blindaje) | **Inmune (Total)** |
+| **Costo** | Medio | Bajo | Alto (Equipos y fusión) |
+| **Uso común** | TV por cable e Internet HFC | Redes LAN (Oficinas/Hogar) | Backbones y enlaces submarinos |
+
+#
+### Resumen de componentes:
+
+* **Cable Coaxial:** Tiene un núcleo de cobre grueso. La malla metálica que ves en la imagen lo protege de ruidos externos, por eso se usa mucho para traer internet desde la calle (donde hay muchos cables eléctricos).
+* **UTP (Par Trenzado):** Es el cable de red común. Los cables se trenzan entre sí para que la interferencia de un hilo se cancele con la del otro. Es barato y flexible, pero después de los 100 metros la señal "se muere".
+* **Fibra Óptica:** Es tecnología de punta. Como transmite luz sobre vidrio, no le afectan los motores eléctricos ni los rayos. Es la columna vertebral (**Backbone**) de internet.
+
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+## 26. Según Cisco, ¿qué significa CCENT, CCNA y CCNP?
+
+### Certificaciones Cisco: Niveles y Especialidades
+
+Cisco Systems ofrece un sistema jerárquico de certificaciones que valida las competencias técnicas en el mundo de las telecomunicaciones. Estas certificaciones son reconocidas globalmente como el estándar de oro en IT.
+
+
+#### Niveles de Certificación
+* **CCENT (Entry):** Era el nivel de entrada básico. Aunque Cisco lo retiró en 2020 para simplificar su sistema, se lo sigue recordando como la base para técnicos que recién comenzaban a instalar redes pequeñas.
+* **CCNA (Associate):** Es el nivel más popular y el punto de partida actual. Un profesional CCNA domina los fundamentos: conectividad IP, seguridad básica y, lo más importante hoy, principios de **automatización y programabilidad**.
+* **CCNP (Professional):** Un nivel avanzado. Valida la capacidad de planificar e implementar redes complejas de gran escala (WAN) y resolver problemas profundos de arquitectura.
+
+#
+
+#### Especializaciones (Tracks)
+
+Cisco divide el conocimiento en "carreras" o especialidades según el área de trabajo:
+
+**1. Track Routing & Switching (Enterprise):**
+Es el corazón de las redes. Se enfoca en cómo mover los datos de un punto A a un punto B de forma eficiente.
+* **Temas clave:** Protocolos de enrutamiento (OSPF, BGP), protocolos de capa 2 (STP, VLANs) y diseño de redes jerárquicas. Es la base técnica para casi cualquier otra especialidad.
+
+**2. Track Security (Seguridad):**
+Se enfoca exclusivamente en blindar la red.
+* **Temas clave:** Configuración de **Firewalls**, creación de túneles **VPN**, sistemas de detección de intrusos (IDS/IPS) y políticas de control de acceso para evitar hackeos o fugas de información.
+
+| Nivel | Rol sugerido | Complejidad |
+| :--- | :--- | :--- |
+| **CCNA** | Administrador de red Jr. | Media - Fundamentos |
+| **CCNP** | Ingeniero de redes Senior | Alta - Especialización |
+| **CCIE** | Arquitecto de Infraestructura | Experto - Diseño de alto nivel |
+
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 

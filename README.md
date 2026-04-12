@@ -1,10 +1,12 @@
 # 🌐 Trabajo Práctico Teórico — Programación sobre Redes
 
+<br></br>
 <div align="center">
 
 <img src="img/logo-ifts18.png" width="180px">
+<br></br>
 
-# Instituto de Formación Técnica Superior N°18
+## Instituto de Formación Técnica Superior N°18
 
 </div>
 
@@ -15,7 +17,7 @@
 
 </div>
 
----
+
 <div align="center">
   
 ## 👥 Integrantes
@@ -25,14 +27,14 @@
 * **Diego Murgana** 
 * **Leandro Sosa**
 * **Agustín Senin**
-* **Santiago Padilla**
-  
+* **Santiago Padilla**  
 
----
+
+<br></br>
 
 ## 📍 Índice de Contenidos
 
-| N° | Tema | N° | Tema | N° | Tema |
+| N° | Pregunta | N° | Pregunta | N° | Pregunta |
 |:---:|:---|:---:|:---|:---:|:---|
 | 1 | [¿Qué es una VLAN?](#1-qué-es-una-vlan) | 12 | [Tecnologías Wireless](#12-tecnologías-wireless-y-sus-estándares) | 23 | [Microsoft Teams](#23-explique-la-solución-de-microsoft-teams) |
 | 2 | [¿Qué es una VPN?](#2-qué-es-una-vpn) | 13 | [¿Qué es un Proxy?](#13-qué-es-un-proxy) | 24 | [Calidad en enlace MPLS](#24-qué-significa-aplicar-calidad-en-un-enlace-mpls) |
@@ -46,11 +48,15 @@
 | 10 | [Servicio DHCP](#10-explicar-el-servicio-de-dhcp) | 21 | [Tipos de enlace](#21-tipos-de-enlace-mpls-lan-to-lan-microonda-vsat) | 32 | [IPv4 vs IPv6](#32-diferencias-entre-ipv4-e-ipv6) |
 | 11 | [Servicio DNS](#11-explicar-el-servicio-de-dns) | 22 | [Tecnología LTE](#22-describir-la-tecnología-lte) | 33 | [Experiencia Personal](#33-experiencia-en-redes-por-integrante) |
 
----
 
-## 📖 Desarrollo del Cuestionario
+<br></br>
 
----
+<div align="center">
+
+# 📖 Desarrollo del Cuestionario
+
+</div>
+
 
 ### 1. ¿Qué es una VLAN?
 

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="img/logo-ifts18.png" width="220px">
+<img src="logo-ifts18.png" width="220px">
 
 <br><br>
 

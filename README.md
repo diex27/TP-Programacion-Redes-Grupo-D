@@ -717,37 +717,112 @@ Se enfoca exclusivamente en blindar la red.
 
 ---
 
-### 27. Explique el modelo OSI
+## 27. Explique el modelo OSI
 
-<img src="img/p27-modelo-osi.png" width="35%" align="right" style="margin-left: 15px;">
+### ¿Qué es el Modelo OSI?
 
-**Punto clave:** *Contenido en desarrollo...*
+El **Modelo OSI** (Open Systems Interconnection) es un marco conceptual creado por la ISO que estandariza cómo deben comunicarse los sistemas de red, sin importar el fabricante. Se divide en **7 capas**, donde cada una tiene una misión específica.
 
-**Explicación técnica:** *Contenido en desarrollo...*
+<img src="img/modelo-osi.png" align="right" alt="Diagrama de las 7 capas del modelo OSI" width="350">
+
+#### Las 7 Capas (Del cable al usuario)
+
+1. **Capa Física (1):** Es el hardware puro. Cables, conectores y voltajes. Su unidad son los **Bits**.
+2. **Capa de Enlace (2):** Se encarga de la conexión entre dos equipos vecinos. Usa la dirección **MAC**. Su unidad es la **Trama**. Aquí trabajan los *Switches*.
+3. **Capa de Red (3):** Es la que elige el camino. Usa direcciones **IP** para el enrutamiento. Su unidad es el **Paquete**. Aquí trabajan los *Routers*.
+4. **Capa de Transporte (4):** Se encarga de que los datos lleguen bien y completos (TCP) o rápido (UDP). Su unidad es el **Segmento**.
+5. **Capa de Sesión (5):** Es el "anfitrión". Inicia, mantiene y corta la conversación entre dos computadoras.
+6. **Capa de Presentación (6):** Es el "traductor". Se encarga de que el formato (JPEG, MP3) sea legible y de cifrar los datos por seguridad.
+7. **Capa de Aplicación (7):** Es la que ves vos. La interfaz donde corren protocolos como **HTTP** (web) o **WhatsApp**.
+
+<br clear="right">
+
+#
+
+#### Analogía del Correo Postal
+Para entenderlo más fácil, imaginate que enviás una carta:
+* **Aplicación:** Escribís el mensaje.
+* **Presentación:** Lo escribís en español y lo ponés en un sobre.
+* **Sesión:** Verificás que el destinatario esté disponible para recibirla.
+* **Transporte:** Decidís si la mandás por correo certificado (TCP) o común (UDP).
+* **Red:** El correo le pega una etiqueta con la dirección (IP).
+* **Enlace:** La carta va en un camión desde el centro de distribución a tu casa (MAC).
+* **Física:** Es el asfalto de la ruta por donde viaja el camión.
+
+> **Dato extra:**
+> Los programadores, trabaján casi siempre en la **Capa 7 (Aplicación)**. Sin embargo, cuando tu código tira un error de "Timeout" o "Connection Refused", el problema suele estar bajando hacia las **Capas 3 o 4**. Saber esto les ayuda a debugear mucho más rápido, es decir si el ping (Capa 3) falla, no tiene sentido que pierdas 2 horas revisando tu código de Python (Capa 7). El problema es de red, no de programación.
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 28. Estándar IEEE 802.3
+## 28. Estándar IEEE 802.3
 
-<img src="img/p28-ieee8023.png" width="35%" align="right" style="margin-left: 15px;">
+El **IEEE 802.3** es el estándar que regula las redes **Ethernet**. Define las reglas de la Capa 1 (Física) y la subcapa MAC de la Capa 2 (Enlace) del modelo OSI. Es la tecnología de red cableada más exitosa y utilizada en la historia.
 
-**Punto clave:** *Contenido en desarrollo...*
 
-**Explicación técnica:** *Contenido en desarrollo...*
+#### ¿Cómo se implementa?
+La forma en que usamos Ethernet ha cambiado drásticamente con los años:
+* **Antes (Antiguo):** Se usaba cable coaxial en una "topología de bus" (un solo cable largo para todos). Si dos PCs hablaban al mismo tiempo, los datos chocaban (**colisión**).
+* **Ahora (Moderno):** Se utiliza **cable UTP o Fibra Óptica** en una "topología de estrella". Todos los equipos se conectan a un **Switch** central. 
+* **Full-Duplex:** Gracias a los switches modernos, los equipos pueden enviar y recibir datos al mismo tiempo sin que choquen, eliminando el problema de las colisiones.
+
+#### Análisis de Ventajas y Desventajas
+
+| Ventajas | Desventajas |
+| :--- | :--- |
+| **Bajo Costo:** Los cables y placas de red son muy económicos. | **Cero Movilidad:** Estás atado físicamente a un cable. |
+| **Velocidad:** Evolucionó de 10 Mbps a más de 100 Gbps. | **Límite de Distancia:** El cobre (UTP) solo llega a **100 metros**. |
+| **Compatibilidad:** Un equipo viejo de hace 15 años puede hablar con uno nuevo. | **Instalación:** Requiere canaletas, agujeros en paredes y mantenimiento físico. |
+| **Simplicidad:** Es fácil de instalar y administrar. | **Costo de Obra:** En edificios viejos, pasar cables es caro y molesto. |
+
+---
+
+#### Resumen técnico:
+El éxito del 802.3 se debe a su **interoperabilidad**. No importa quién fabrique el cable o la computadora; si ambos cumplen con el estándar IEEE 802.3, la comunicación está garantizada.
+
+> **Dato extra:**
+> Como desarrollador de software, Ethernet es tu mejor aliado para la estabilidad. Mientras que el Wi-Fi (802.11) puede tener interferencias o micro-cortes que arruinan un despliegue de código o una conexión a una base de datos, una conexión **802.3** te asegura una latencia constante y mínima, ideal para entornos de desarrollo y servidores.
+
+
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 29. Estándar IEEE 802.4
+## 29. Estándar IEEE 802.4
 
-<img src="img/p29-ieee8024.png" width="35%" align="right" style="margin-left: 15px;">
+### IEEE 802.4 (Token Bus)
 
-**Punto clave:** *Contenido en desarrollo...*
+El estándar **IEEE 802.4** define una configuración de red conocida como **Token Bus**. Aunque físicamente utiliza un cable central (bus), lógicamente funciona como un anillo donde los datos se transmiten de forma ordenada.
 
-**Explicación técnica:** *Contenido en desarrollo...*
+
+#### ¿Cómo funciona?
+A diferencia de Ethernet (donde las PC "compiten" por hablar), en el estándar 802.4 se utiliza un **Token** (una trama de control o "ficha virtual"):
+1. Solo la computadora que posee el **Token** tiene permiso para transmitir datos.
+2. Una vez que termina de transmitir, le pasa el Token a la siguiente computadora en un orden predefinido (anillo lógico).
+3. Si una computadora no tiene nada que enviar, pasa el Token inmediatamente a la siguiente.
+
+#### Comparativa: Ventajas y Desventajas
+
+| Ventajas | Desventajas |
+| :--- | :--- |
+| **Determinismo:** Se puede calcular con precisión el tiempo máximo de espera para transmitir (vital para fábricas). | **Latencia:** En redes con pocos datos, hay que esperar a que el token recorra todos los nodos. |
+| **Sin Colisiones:** Al haber un solo "micrófono" virtual, los datos nunca chocan entre sí. | **Complejidad:** Si una PC falla o se apaga con el token, la red se detiene hasta regenerar uno nuevo. |
+| **Estabilidad bajo carga:** La red no se vuelve lenta ni colapsa cuando hay mucho tráfico. | **Obsolescencia:** Es una tecnología cara y difícil de mantener comparada con los switches modernos. |
+
+---
+
+#### Escenario de aplicación
+Históricamente, este estándar fue el preferido para la **automatización industrial** (plantas de montaje, robótica). En estos entornos, no importa tanto la velocidad punta, sino la garantía de que un sensor pueda enviar una señal de "parada de emergencia" en un tiempo exacto y garantizado.
+
+> **Dato extra:** comprarativa entre estandares IEEE  802.x  (ver foto) 
+<br></br>
+<p align="center">
+  <img src="img/diferencias.png" alt="Comparativa entre estandares IEEE 802.x width="100%">
+  <br>
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 

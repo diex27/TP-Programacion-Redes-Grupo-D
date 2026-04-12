@@ -58,7 +58,7 @@
 </div>
 
 
-### 1. ¿Qué es una VLAN?
+## 1. ¿Qué es una VLAN?
 
 <img src="img/p1-vlan.png" alt="Ejemplo de VLAN por departamentos" width="40%" align="right" style="margin-left: 20px; margin-bottom: 20px;">
 
@@ -78,7 +78,7 @@ Según la bibliografía de **Cisco**, esta separación optimiza el rendimiento y
 
 ---
 
-### 2. ¿Qué es una VPN?
+## 2. ¿Qué es una VPN?
 
 Una **VPN** (Virtual Private Network o Red Privada Virtual) es una tecnología que permite extender una red privada sobre una red pública como Internet. Su función principal es crear un canal de comunicación seguro, permitiendo que los datos viajen protegidos como si estuviéramos conectados físicamente a la red de nuestra propia oficina, sin importar la distancia geográfica.
 
@@ -103,7 +103,7 @@ Según la bibliografía de **Cisco**, una VPN garantiza la operatividad y seguri
 
 ---
 
-### 3. ¿Qué es una SAN?
+## 3. ¿Qué es una SAN?
 
 <img src="img/SAN.png" alt="Arquitectura de red SAN" width="40%" align="right" style="margin-left: 20px; margin-bottom: 20px;">
 
@@ -124,7 +124,7 @@ Como se observa en el diagrama, la SAN actúa como una "nube de discos" privada.
 
 ---
 
-### 4. Diferencias entre un Hub, Repetidor, Router y Switch
+## 4. Diferencias entre un Hub, Repetidor, Router y Switch
 
 Para comprender cómo se estructura una red, es fundamental distinguir la inteligencia y la función de cada dispositivo. Como se observa en el gráfico, existen diversos componentes que trabajan en conjunto para permitir la comunicación:
 
@@ -148,49 +148,90 @@ Además, en el esquema podemos ver otros componentes vitales como el **Firewall*
 
 ---
 
-### 5. ¿Qué es un protocolo de comunicaciones?
+## 5. ¿Qué es un protocolo de comunicaciones?
 
-<img src="img/p5-protocolo.png" width="35%" align="right" style="margin-left: 15px;">
+<img src="img/p5-protocolo.png" alt="Concepto de protocolo de comunicaciones" width="45%" align="right" style="margin-left: 20px; margin-bottom: 20px;">
 
-**Punto clave:** *Contenido en desarrollo...*
+En el mundo de las redes, un **protocolo de comunicaciones** es un conjunto de reglas y normas que permiten que dos o más dispositivos se entiendan y compartan información. Si comparamos una red con una charla entre personas, el protocolo sería el idioma y las reglas de cortesía: no importa qué tan buenos sean los teléfonos (el hardware), si no se utiliza el mismo idioma y no se respetan los turnos para hablar, la comunicación fracasará.
 
-**Explicación técnica:** *Contenido en desarrollo...*
+Como se ilustra en el esquema, el protocolo actúa como el medio que garantiza que el mensaje llegue correctamente del emisor al receptor. Según explica **Tanenbaum**, este acuerdo define tres aspectos fundamentales:
 
-<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+* **Sintaxis:** Cómo se estructuran los datos (el formato del paquete).
+* **Semántica:** Qué significa cada sección de la información enviada.
+* **Temporización:** A qué velocidad se deben enviar los datos y cómo se sincronizan ambos equipos.
 
----
+En resumen, los protocolos son el "reglamento" que garantiza que el flujo de datos sea ordenado, seguro y universal, permitiendo que equipos de diferentes marcas en todo el mundo se conecten entre sí sin problemas.
 
-### 6. Explique TCP/IP y NetBios, resuma sus diferencias
 
-<img src="img/p6-tcpip-netbios.png" width="35%" align="right" style="margin-left: 15px;">
-
-**Punto clave:** *Contenido en desarrollo...*
-
-**Explicación técnica:** *Contenido en desarrollo...*
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 7. ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un Flag?
+## 6. Explique TCP/IP y NetBios, resuma sus diferencias
 
-<img src="img/p7-paquete-tcp.png" width="35%" align="right" style="margin-left: 15px;">
+<img src="img/Suite_de_Protocolos.jpg" alt="Suite de protocolos TCP/IP" width="45%" align="right" style="margin-left: 20px; margin-bottom: 20px;">
 
-**Punto clave:** *Contenido en desarrollo...*
+Para entender las redes modernas y las antiguas, debemos diferenciar entre el estándar global **TCP/IP** y el sistema de nombres **NetBIOS**:
 
-**Explicación técnica:** *Contenido en desarrollo...*
+* **TCP/IP (Transmission Control Protocol/Internet Protocol):** Es el lenguaje universal de Internet. Como se observa en la imagen de la **Suite de Protocolos**, no es un solo protocolo sino una arquitectura de capas. Según **Cisco**, su gran ventaja es que es "enrutable": permite que los datos viajen a través de múltiples routers hasta llegar a cualquier parte del mundo usando direcciones numéricas (IP). Es robusto, escala a redes gigantescas y garantiza que la información llegue sin errores.
+
+* **NetBIOS (Network Basic Input/Output System):** Es un protocolo mucho más antiguo, desarrollado originalmente para redes locales (LAN) pequeñas. A diferencia de TCP/IP, NetBIOS no usa números, sino **nombres de hasta 15 caracteres** para identificar a las computadoras (ejemplo: `PC-CONTABILIDAD`). Su limitación principal es que no es enrutable; es decir, los mensajes de NetBIOS no pueden salir de la oficina hacia Internet por sí solos.
+
+**Diferencia fundamental:**
+Mientras que TCP/IP es el motor que mueve los datos por todo el planeta, NetBIOS es un sistema de nombres simplificado. Hoy en día, NetBIOS casi no se usa solo, sino que corre "encapsulado" dentro de TCP/IP (NetBIOS sobre TCP/IP) para que podamos seguir viendo los nombres de los equipos en Windows pero usando la potencia y el alcance de Internet.
+
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 8. Defina la red según su geografía. Explicar distintas variantes.
+## 7. ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un Flag?
 
-<img src="img/p8-geografia-redes.png" width="35%" align="right" style="margin-left: 15px;">
+En el modelo TCP/IP, la información no viaja como un bloque único, sino fragmentada en unidades llamadas **paquetes** (o segmentos en la capa de transporte). Un paquete está formado principalmente por dos secciones: el **Encabezado (Header)**, que contiene las instrucciones de manejo, y los **Datos (Payload)**, que es la información real que queremos transmitir.
 
-**Punto clave:** *Contenido en desarrollo...*
+<p align="center">
+  <img src="img/p7-encabezado-tcp.png" alt="Estructura del encabezado TCP en español" width="100%">
+  <br>
+  <i>Estructura técnica de un encabezado TCP agrupados por colores.</i>
+</p>
 
-**Explicación técnica:** *Contenido en desarrollo...*
+Como se puede observar en la tabla técnica superior, el encabezado contiene datos críticos para que la comunicación sea exitosa, representados por colores:
+* **Azul:** Contiene los **Puertos**, que identifican la aplicación que envía y la que recibe.
+* **Verde:** Incluye los **Números de Secuencia**, fundamentales para reordenar los datos al llegar.
+* **Amarillo:** Es la sección de Control y Gestión, donde **residen los Flags** y el Tamaño de Ventana para coordinar el flujo de la comunicación.
+* **Naranja:** Tiene la **Suma de Verificación (Checksum)**, que asegura que el paquete no se dañó.
+
+#### ¿Qué es un Flag?
+Dentro del encabezado, específicamente en la sección **amarilla** (donde se ven las siglas CWR, ECE, URG, ACK, PSH, RST, SYN, FIN), encontramos los **Flags** (banderas). Según la bibliografía de **Cisco**, los Flags son indicadores de un solo bit que funcionan como "señales de control" entre los dispositivos.
+
+Funcionan como un lenguaje de señas para gestionar la conexión. Los más importantes son:
+* **SYN (Synchronize):** "Hola, ¿querés iniciar una conexión?".
+* **ACK (Acknowledgment):** "Recibido, confirmo que me llegó el paquete".
+* **FIN (Finish):** "Ya no tengo más nada para enviar, cerremos la conexión".
+
+En resumen, si el paquete es un sobre, el encabezado es la etiqueta con la dirección y los **Flags** son marcas especiales que indican si el envío es urgente o si requiere un acuse de recibo obligatorio.
+
+
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+## 8. Defina la red según su geografía. Explicar distintas variantes.
+
+<img src="img/clasificacion_de_redes.png" alt="Clasificación geográfica de redes" width="45%" align="right" style="margin-left: 20px; margin-bottom: 20px;">
+
+La clasificación geográfica de las redes determina el alcance físico y las tecnologías necesarias para establecer la comunicación. Según la bibliografía de **Tanenbaum**, las redes se categorizan principalmente por la distancia que cubren:
+
+* **PAN (Personal Area Network):** Como se observa en la base del gráfico, son redes de muy corto alcance (menos de 10 metros). El ejemplo más común es el **Bluetooth** (estándar IEEE 802.15) que conecta dispositivos personales.
+* **LAN (Local Area Network):** Cubre áreas pequeñas como una casa o una oficina. Suelen usar tecnologías **Wi-Fi** (IEEE 802.11) o cables Ethernet, con un alcance típico de hasta 150 metros.
+* **MAN (Metropolitan Area Network):** Diseñada para conectar diversas LAN en una ciudad o municipio, con un alcance de hasta 50 km. Utiliza tecnologías como WiMAX fijo para cubrir grandes áreas urbanas.
+* **WAN (Wide Area Network):** Es la red de área amplia que conecta países o continentes. Internet es el ejemplo máximo. Utiliza infraestructuras complejas, satélites y cables submarinos para cubrir distancias superiores a los 150 km.
+
+**Dato clave:** A medida que la red crece en geografía, la administración se vuelve más compleja y suele requerir de proveedores externos (ISP) para mantener la infraestructura de conexión.
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 

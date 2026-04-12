@@ -1,289 +1,454 @@
-# 🌐 Trabajo Práctico Teórico: Programación sobre Redes
+🌐 Trabajo Práctico Teórico — Programación sobre Redes
 
-**Institución:** IFTS 18  
-**Carrera:** Técnico Superior en Desarrollo de Software  
-**Profesor:** Lucas Rusatti  
-**Grupo:** D  
+<div align="center">
 
----
+<img src="img/logo-ifts18.png" width="220px">
 
-## 👥 Integrantes
-* **Diego Murgana** - *Administrador del Proyecto*
-* **Leandro Sosa**
-* **Agustín Senin**
-* **Santiago Padilla**
+<br><br>
 
----
+Instituto de Formación Técnica Superior N°18
 
-## 📍 Índice de Contenidos
-| | | |
-| :--- | :--- | :--- |
-| 1. [VLAN](#1-qué-es-una-vlan) | 12. [Wireless y Estándares](#12-explicar-las-tecnologías-wireless-y-sus-estándares) | 23. [Solución Microsoft Teams](#23-explique-la-solución-de-microsoft-teams) |
-| 2. [VPN](#2-qué-es-una-vpn) | 13. [¿Qué es un Proxy?](#13-qué-es-un-proxy) | 24. [Calidad en Enlace MPLS](#24-qué-significa-aplicar-calidad-en-un-enlace-mpls) |
-| 3. [SAN](#3-qué-es-una-san) | 14. [Spanning Tree](#14-explicar-el-protocolo-spanning-tree) | 25. [Coaxial, UTP o Fibra](#25-qué-diferencias-puede-encontrar-entre-una-conexión-coaxial-utp-o-fibra) |
-| 4. [Dispositivos de Red](#4-diferencias-entre-un-hub-repetidor-router-y-switch) | 15. [Protocolo OSPF](#15-explicar-el-protocolo-de-comunicaciones-ospf) | 26. [Certificaciones Cisco](#26-según-cisco-qué-significa-ccent-ccna-y-ccnp) |
-| 5. [Protocolo de Comuna.](#5-qué-es-un-protocolo-de-comunicaciones) | 16. [Protocolo ARP](#16-explicar-el-protocolo-arp) | 27. [Modelo OSI](#27-explique-el-modelo-osi) |
-| 6. [TCP/IP y NetBios](#6-explique-tcpip-y-netbios-resuma-sus-diferencias) | 17. [¿Qué es un Firewall?](#17-qué-es-un-firewall) | 28. [Estándar IEEE 802.3](#28-explicar-el-estándar-ieee-8023-regula-la-red) |
-| 7. [Paquete TCP/IP y Flags](#7-cómo-está-formado-un-paquete-de-datos-en-tcpip-qué-es-un-flag-en-un-paquete-de-tcpip) | 18. [¿Qué es una DMZ?](#18-qué-es-una-dmz) | 29. [Estándar IEEE 802.4](#29-explicar-el-estándar-ieee-8024-regula-la-red) |
-| 8. [Red según Geografía](#8-defina-la-red-según-su-geografía-explicar-distintas-variantes) | 19. [¿Qué es un Gateway?](#19-qué-es-un-gateway) | 30. [Protocolos de envío/recepción de correo](#30-qué-protocolos-se-usan-para-enviar-y-recibir-correo) |
-| 9. [Red según Topología](#9-defina-una-red-según-su-topología-explicar-distintas-variantes) | 20. [Significado de NBL](#20-según-microsoft-qué-significa-nbl) | 31. [Protocolo para leer correo](#31-qué-protocolo-puede-usarse-para-leer-correo-recibido) |
-| 10. [Servicio DHCP](#10-explicar-el-servicio-de-dhcp) | 21. [Tipos de enlace](#21-tipos-de-enlace-mpls-lan-to-lan-microonda-vsat) | 32. [Diferencias IPv4 e IPv6](#32-diferencias-entre-ipv4-e-ipv6) |
-| 11. [Servicio DNS](#11-explicar-el-servicio-de-dns) | 22. [Tecnología LTE](#22-describir-la-tecnología-lte) | 33. [Experiencia Personal](#33-individual-para-cada-integrante-del-grupo-qué-experiencia-tienen-en-redes) |
+📚 Carrera: Técnico Superior en Desarrollo de Software
+👨‍🏫 Profesor: Lucas Rusatti
+👥 Grupo: D
+
+</div>
 
 ---
 
-## 📖 Desarrollo del Cuestionario
+👥 Integrantes
 
-
-### 1. ¿Qué es una VLAN?
-**Punto clave:** Una **VLAN** (Virtual Local Area Network) es una subdivisión lógica de una red física local que permite agrupar dispositivos como si estuvieran en la misma red.
-
-<img src="vlan-diagrama.png" alt="Diagrama de segmentación lógica de una VLAN" width="300" align="right" style="margin-left: 20px; margin-bottom: 20px;">
-
-[⬆ Volver al Índice](#-índice-de-contenidos)
+1. ## Diego Murgana
+2. ## Leandro Sosa
+3. ## Agustín Senin
+4. ## Santiago Padilla
 
 ---
 
-### 2. ¿Qué es una VPN?
-**Punto clave:** Una **VPN** (Virtual Private Network) es una tecnología que crea un túnel cifrado y seguro sobre una red pública.
+📍 Índice de Contenidos
 
-
-
-[Image of VPN tunnel encrypted connection]
-
-
-[⬆ Volver al Índice](#-índice-de-contenidos)
-
----
-
-### 3. ¿Qué es una SAN?
-**Punto clave:** Una **SAN** (Storage Area Network) es una red de alta velocidad diseñada para conectar servidores a almacenamiento masivo.
-
-
-
-[Image of SAN architecture diagram]
-
-
-[⬆ Volver al Índice](#-índice-de-contenidos)
+| N° | Tema | N° | Tema | N° | Tema |
+|:---:|:---|:---:|:---|:---:|:---|
+| 1 | ¿Qué es una VLAN? | 12 | Tecnologías Wireless | 23 | Microsoft Teams |
+| 2 | ¿Qué es una VPN? | 13 | ¿Qué es un Proxy? | 24 | Calidad en enlace MPLS |
+| 3 | ¿Qué es una SAN? | 14 | Protocolo Spanning Tree | 25 | Coaxial, UTP y Fibra |
+| 4 | Hub, Repetidor, Router y Switch | 15 | Protocolo OSPF | 26 | Certificaciones Cisco |
+| 5 | Protocolo de Comunicaciones | 16 | Protocolo ARP | 27 | Modelo OSI |
+| 6 | TCP/IP y NetBios | 17 | ¿Qué es un Firewall? | 28 | Estándar IEEE 802.3 |
+| 7 | Paquete TCP/IP y Flags | 18 | ¿Qué es una DMZ? | 29 | Estándar IEEE 802.4 |
+| 8 | Red según Geografía | 19 | ¿Qué es un Gateway? | 30 | Protocolos de correo |
+| 9 | Red según Topología | 20 | ¿Qué significa NBL? | 31 | Protocolo para leer correo |
+| 10 | Servicio DHCP | 21 | Tipos de enlace | 32 | IPv4 vs IPv6 |
+| 11 | Servicio DNS | 22 | Tecnología LTE | 33 | Experiencia Personal |
 
 ---
 
-### 4. Diferencias entre un Hub, Repetidor, Router y SWITCH
-**Punto clave:** Estos dispositivos operan en diferentes capas del modelo OSI y tienen distintos niveles de inteligencia.
-
-| Dispositivo | Capa OSI | Inteligencia |
-| :--- | :--- | :--- |
-| **Repetidor** | 1 | Nula |
-| **Hub** | 1 | Baja |
-| **Switch** | 2 | Media |
-| **Router** | 3 | Alta |
-
-[⬆ Volver al Índice](#-índice-de-contenidos)
+📖 Desarrollo del Cuestionario
 
 ---
 
-### 5. ¿Qué es un protocolo de comunicaciones?
-**Punto clave:** Conjunto de reglas que permiten que dos o más entidades se comuniquen entre sí compartiendo sintaxis y semántica.
+1. ¿Qué es una VLAN?
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p1-vlan.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 6. Explique TCP/IP y NetBios, resuma sus diferencias.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 7. ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un “flag” en un paquete de TCP/IP?
-*Contenido en desarrollo...*
+2. ¿Qué es una VPN?
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p2-vpn.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 8. Defina la red según su geografía. Explicar distintas variantes.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 9. Defina una red según su topología. Explicar distintas variantes.
-*Contenido en desarrollo...*
+3. ¿Qué es una SAN?
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p3-san.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 10. Explicar el servicio de DHCP.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 11. Explicar el servicio de DNS.
-*Contenido en desarrollo...*
+4. Diferencias entre un Hub, Repetidor, Router y Switch
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p4-dispositivos.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 12. Explicar las tecnologías Wireless, y sus estándares.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 13. ¿Qué es un Proxy?
-*Contenido en desarrollo...*
+5. ¿Qué es un protocolo de comunicaciones?
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p5-protocolo.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 14. Explicar el protocolo Spanning tree.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 15. Explicar el protocolo de comunicaciones OSPF.
-*Contenido en desarrollo...*
+6. Explique TCP/IP y NetBios, resuma sus diferencias
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p6-tcpip-netbios.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 16. Explicar el protocolo ARP.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 17. ¿Qué es un Firewall?
-*Contenido en desarrollo...*
+7. ¿Cómo está formado un paquete de datos en TCP/IP? ¿Qué es un Flag?
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p7-paquete-tcp.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 18. ¿Qué es una DMZ?
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 19. ¿Qué es un Gateway?
-*Contenido en desarrollo...*
+8. Defina la red según su geografía. Explicar distintas variantes.
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p8-geografia-redes.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 20. Según Microsoft, ¿qué significa NBL?
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 21. Tipos de enlace: MPLS, LAN to LAN, microonda, VSAT.
-*Contenido en desarrollo...*
+9. Defina una red según su topología. Explicar distintas variantes.
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p9-topologia.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 22. Describir la tecnología LTE.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 23. Explique la solución de Microsoft Teams.
-*Contenido en desarrollo...*
+10. Explicar el servicio de DHCP
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p10-dhcp.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 24. ¿Qué significa aplicar calidad en un enlace MPLS?
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 25. ¿Qué diferencias puede encontrar entre una conexión Coaxial, UTP o Fibra?
-*Contenido en desarrollo...*
+11. Explicar el servicio de DNS
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p11-dns.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 26. Según Cisco, ¿qué significa CCENT, CCNA y CCNP?
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 27. Explique el modelo OSI.
-*Contenido en desarrollo...*
+12. Tecnologías Wireless y sus estándares
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p12-wireless.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 28. Explicar el estándar IEEE 802.3 regula la red.
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 29. Explicar el estándar IEEE 802.4 regula la red.
-*Contenido en desarrollo...*
+13. ¿Qué es un Proxy?
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p13-proxy.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 30. ¿Qué protocolos se usan para enviar y recibir correo?
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 31. ¿Qué protocolo puede usarse para leer correo recibido?
-*Contenido en desarrollo...*
+14. Protocolo Spanning Tree
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p14-spanning-tree.png" width="35%" align="right" style="margin-left: 15px;">
 
----
+Punto clave: Contenido en desarrollo...
 
-### 32. Diferencias entre IPV4 e IPV6
-*Contenido en desarrollo...*
+Explicación técnica: Contenido en desarrollo...
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 33. Individual para cada integrante del grupo: ¿Qué experiencia tienen en redes?
-* **Diego Murgana:** *Completar aquí*
-* **Leandro Sosa:** *Completar aquí*
-* **Agustín Senin:** *Completar aquí*
-* **Santiago Padilla:** *Completar aquí*
+15. Protocolo de comunicaciones OSPF
 
-[⬆ Volver al Índice](#-índice-de-contenidos)
+<img src="img/p15-ospf.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
+
+16. Protocolo ARP
+
+<img src="img/p16-arp.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+17. ¿Qué es un Firewall?
+
+<img src="img/p17-firewall.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+18. ¿Qué es una DMZ?
+
+<img src="img/p18-dmz.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+19. ¿Qué es un Gateway?
+
+<img src="img/p19-gateway.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+20. Según Microsoft, ¿qué significa NBL?
+
+<img src="img/p20-nbl.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+21. Tipos de enlace: MPLS, LAN to LAN, Microonda, VSAT
+
+<img src="img/p21-enlaces.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+22. Describir la tecnología LTE
+
+<img src="img/p22-lte.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+23. Explique la solución de Microsoft Teams
+
+<img src="img/p23-teams.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+24. ¿Qué significa aplicar calidad en un enlace MPLS?
+
+<img src="img/p24-qos-mpls.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+25. Diferencias entre Coaxial, UTP y Fibra
+
+<img src="img/p25-cables.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+26. Según Cisco, ¿qué significa CCENT, CCNA y CCNP?
+
+<img src="img/p26-cisco-cert.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+27. Explique el modelo OSI
+
+<img src="img/p27-modelo-osi.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+28. Estándar IEEE 802.3
+
+<img src="img/p28-ieee8023.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+29. Estándar IEEE 802.4
+
+<img src="img/p29-ieee8024.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+30. Protocolos para enviar y recibir correo
+
+<img src="img/p30-email-protocolos.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+31. Protocolo para leer correo recibido
+
+<img src="img/p31-imap-pop3.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+32. Diferencias entre IPv4 e IPv6
+
+<img src="img/p32-ipv4-ipv6.png" width="35%" align="right" style="margin-left: 15px;">
+
+Punto clave: Contenido en desarrollo...
+
+Explicación técnica: Contenido en desarrollo...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+33. Experiencia en redes por integrante
+
+Punto clave: Cada integrante describe su experiencia personal y/o profesional en redes informáticas.
+
+🧑‍💻 Diego Murgana: Completar aquí...
+
+🧑‍💻 Leandro Sosa: Completar aquí...
+
+🧑‍💻 Agustín Senin: Completar aquí...
+
+🧑‍💻 Santiago Padilla: Completar aquí...
+
+<p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
+
+---
+
+<div align="center">
+
+Trabajo Práctico — Programación sobre Redes | IFTS 18 | Grupo D
+
+</div>

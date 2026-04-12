@@ -828,37 +828,89 @@ Históricamente, este estándar fue el preferido para la **automatización indus
 
 ---
 
-### 30. Protocolos para enviar y recibir correo
+## 30. Protocolos para enviar y recibir correo
 
-<img src="img/p30-email-protocolos.png" width="35%" align="right" style="margin-left: 15px;">
 
-**Punto clave:** *Contenido en desarrollo...*
+Para que el correo electrónico funcione, el sistema divide las tareas en dos grandes grupos: protocolos de **envío** y protocolos de **recepción** (o consulta).
 
-**Explicación técnica:** *Contenido en desarrollo...*
+#### 1. SMTP (Simple Mail Transfer Protocol)
+Es el protocolo dedicado exclusivamente al **envío** de mensajes. 
+* **Función:** Transporta el correo desde tu dispositivo hacia el servidor, o entre diferentes servidores de correo.
+* **Analogía:** Es el cartero que recoge tu sobre del buzón de salida y lo lleva a la central de distribución.
+
+#### 2. POP3 (Post Office Protocol v3)
+Es un protocolo para **recibir** o descargar correos.
+* **Funcionamiento:** Descarga los mensajes a tu computadora y, por configuración estándar, los **borra del servidor**. 
+* **Limitación:** No es ideal para el mundo actual donde usamos el mismo correo en el celular y la PC, ya que los mensajes no se sincronizan.
+
+#### 3. IMAP (Internet Message Access Protocol)
+Es el protocolo moderno para **consultar y sincronizar** correos.
+* **Funcionamiento:** Permite visualizar los mensajes directamente en el servidor sin borrarlos. 
+* **Ventaja:** Permite la sincronización total. Si leés un mail en el celular, aparece como leído en la PC. Es el estándar que usan servicios como Gmail o Outlook.
+
+#
+
+#### Resumen Comparativo
+
+| Protocolo | Función | ¿Sincroniza? | Puerto Común (Seguro) |
+| :--- | :--- | :--- | :--- |
+| **SMTP** | Enviar | N/A | 587 / 465 |
+| **POP3** | Recibir / Descargar | No | 995 |
+| **IMAP** | Recibir / Consultar | **Sí** | 993 |
+
+> **Dato extra:**
+> Si tenés que programar una aplicación que envíe alertas automáticas, utilizarás una **librería SMTP**. Sin embargo, si tu sistema debe "escuchar" correos entrantes para procesar pedidos de clientes, deberás configurar una conexión **IMAP**.
+
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 31. Protocolo para leer correo recibido
+## 31. Protocolo para leer correo recibido
 
-<img src="img/p31-imap-pop3.png" width="35%" align="right" style="margin-left: 15px;">
+Para leer el correo recibido, se utilizan principalmente dos protocolos que determinan cómo interactúa el dispositivo del usuario con el servidor.
 
-**Punto clave:** *Contenido en desarrollo...*
+#### IMAP (Internet Message Access Protocol)
+Es el protocolo preferido en la actualidad debido a su capacidad de **sincronización**.
+* **Características:** Los correos se mantienen en el servidor. El usuario puede organizar carpetas, marcar mensajes como leídos o borrarlos, y estos cambios se verán reflejados en todos sus dispositivos (celular, tablet, PC).
+* **Puerto seguro:** 993.
 
-**Explicación técnica:** *Contenido en desarrollo...*
+#### POP3 (Post Office Protocol v3)
+Es un protocolo basado en la **descarga local**.
+* **Características:** Por diseño, POP3 descarga los mensajes al dispositivo y los elimina del servidor. Esto significa que los correos solo son accesibles desde el equipo donde se descargaron.
+* **Puerto seguro:** 995.
+
+#
+
+> **Dato extra:**
+> Supongamos que en una empresa utilizan una cuenta de correo genérica (ej: ventas@empresa.com) que abren tres personas distintas. Si configuraran esa cuenta con **POP3**, la primera persona que abra el correo se "llevaría" los mensajes y los otros dos no verían nada. Por eso, en entornos colaborativos y multidispositivo, **IMAP** es la única opción lógica.
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-### 32. Diferencias entre IPv4 e IPv6
+## 32. Diferencias entre IPv4 e IPv6
 
-<img src="img/p32-ipv4-ipv6.png" width="35%" align="right" style="margin-left: 15px;">
+Debido al crecimiento exponencial de dispositivos conectados, el estándar IPv4 llegó a su límite de capacidad. El protocolo IPv6 surge como la solución definitiva, ofreciendo un espacio de direccionamiento prácticamente infinito y mejoras en la eficiencia de red.
 
-**Punto clave:** *Contenido en desarrollo...*
+#### Cuadro Comparativo
 
-**Explicación técnica:** *Contenido en desarrollo...*
+| Característica | IPv4 | IPv6 |
+| :--- | :--- | :--- |
+| **Longitud** | 32 bits | 128 bits |
+| **Formato** | Decimal (ej: 190.1.1.1) | Hexadecimal (ej: 2001:db8::1) |
+| **N° de direcciones** | ~4.300 millones | ~340 sextillones |
+| **Seguridad** | Opcional (IPsec) | Obligatoria/Nativa (IPsec) |
+| **Configuración** | Manual o DHCP | Autoconfiguración (Plug & Play) |
+
+**Ventajas de IPv6 sobre IPv4:**
+1. **Escalabilidad:** Permite conectar billones de dispositivos nuevos (IoT).
+2. **Sin necesidad de NAT:** Cada equipo puede tener una IP única global, mejorando la conectividad de extremo a extremo.
+3. **Paquetes más eficientes:** Los routers procesan la información más rápido gracias a un encabezado fijo y simplificado.
+
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 

@@ -60,11 +60,19 @@
 
 ### 1. ¿Qué es una VLAN?
 
-<img src="img/p1-vlan.png" width="35%" align="right" style="margin-left: 15px;">
+<img src="img/p1-vlan.png" alt="Ejemplo de VLAN por departamentos" width="40%" align="right" style="margin-left: 20px; margin-bottom: 20px;">
 
-**Punto clave:** *Contenido en desarrollo...*
+Una **VLAN** (Virtual Local Area Network) es una tecnología que nos permite dividir un único switch físico en varias redes lógicas independientes. En lugar de tener que comprar un equipo para cada sector de una empresa, usamos el software del switch para segmentar y organizar el tráfico de datos de manera inteligente.
 
-**Explicación técnica:** *Contenido en desarrollo...*
+Como podemos observar en la imagen, el mismo switch físico está repartiendo la conexión para distintos departamentos. Gracias a esta configuración, la **VLAN 10 (Finanzas)** se mantiene totalmente aislada de la **VLAN 30 (Ventas)**. Esto significa que, aunque todos los cables lleguen al mismo aparato, los datos de un grupo no se "ven" ni se mezclan con los del otro.
+
+Según la bibliografía de **Cisco**, esta separación optimiza el rendimiento y la seguridad de la red por tres motivos principales:
+
+* **Seguridad:** Un usuario en la red de Ventas no puede acceder a los servidores de Finanzas si no hay un permiso de ruteo explícito.
+* **Orden y Rendimiento:** Si un sector está saturando la red con archivos pesados, ese tráfico no afecta la velocidad de los demás sectores.
+* **Flexibilidad:** Si un empleado se muda de oficina, simplemente se cambia la configuración de su boca de red en el switch sin necesidad de tirar cables nuevos.
+
+
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 

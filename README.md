@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="logo-ifts18.png" width="180px">
+<img src="img/logo-ifts18.png" width="180px">
 
 # Instituto de Formación Técnica Superior N°18
 

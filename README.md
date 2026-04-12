@@ -916,20 +916,21 @@ Debido al crecimiento exponencial de dispositivos conectados, el estándar IPv4 
 
 ---
 
-### 33. Experiencia en redes por integrante
+## 33. Experiencia en redes por integrante
 
-**Punto clave:** Cada integrante describe su experiencia personal y/o profesional en redes informáticas.
+### En esta sección detallamos el punto de partida técnico de cada miembro del equipo antes de cursar la asignatura:
 
-**Diego Murgana:** *Completar aquí...*
+| Integrante | Experiencia y Conocimientos Previos |
+| :--- | :--- |
+| **Diego Murgana** | **Cuento con experiencia práctica previa.** Realicé un curso de redes hogareñas donde aprendí a configurar routers, instalar impresoras de red y gestionar carpetas compartidas. El resto de los conocimientos técnicos y teóricos los estoy profundizando durante la tecnicatura. |
+| **Leandro Sosa** | No contaba con conocimientos previos de redes antes de ingresar a la tecnicatura. Todo lo que sé sobre la materia lo he aprendido y desarrollado a lo largo de esta cursada. |
+| **Agustín Senin** | Mi formación en redes comenzó formalmente con el inicio de esta carrera. No poseía conocimientos técnicos previos sobre el funcionamiento de la infraestructura de red. |
+| **Santiago Padilla** | No tenía experiencia previa en el área de telecomunicaciones o redes; mis conocimientos actuales son exclusivamente los adquiridos durante el transcurso de la tecnicatura. |
 
-**Leandro Sosa:** *Completar aquí...*
 
-**Agustín Senin:** *Completar aquí...*
-
-**Santiago Padilla:** *Completar aquí...*
 
 <p align="right"><a href="#-índice-de-contenidos">⬆ Volver al Índice</a></p>
 
 ---
 
-*Trabajo Práctico — Programación sobre Redes | IFTS 18 | Grupo D*
+**Trabajo Práctico — Programación sobre Redes | IFTS 18 | Grupo D**

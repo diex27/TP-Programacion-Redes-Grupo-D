@@ -922,7 +922,7 @@ Debido al crecimiento exponencial de dispositivos conectados, el estándar IPv4 
 
 | Integrante | Experiencia y Conocimientos Previos |
 | :--- | :--- |
-| **Diego Murgana** | **Cuento con experiencia práctica previa.** Realicé un curso de redes hogareñas donde aprendí a configurar routers, instalar impresoras de red y gestionar carpetas compartidas. El resto de los conocimientos técnicos y teóricos los estoy profundizando durante la tecnicatura. |
+| **Diego Murgana** | Cuento con una experiencia práctica previa basica. Es decir, realicé un curso de redes hogareñas donde aprendí a configurar routers, instalar impresoras de red y gestionar carpetas compartidas. El resto de los conocimientos técnicos y teóricos los estoy profundizando durante la tecnicatura. |
 | **Leandro Sosa** | No contaba con conocimientos previos de redes antes de ingresar a la tecnicatura. Todo lo que sé sobre la materia lo he aprendido y desarrollado a lo largo de esta cursada. |
 | **Agustín Senin** | Mi formación en redes comenzó formalmente con el inicio de esta carrera. No poseía conocimientos técnicos previos sobre el funcionamiento de la infraestructura de red. |
 | **Santiago Padilla** | Mi experiencia personal sobre redes, la obtuve desarrollando, donde aprendi a desplegar puertos para bases de datos o aplicaciones Frontend y Backend. También configure SMTP para el envío de correos, repetidores de wifi y configurar VPN para jugar videojuegos con amigos. |

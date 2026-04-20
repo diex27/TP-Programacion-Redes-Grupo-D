@@ -1,4 +1,8 @@
-# 🌐 Trabajo Práctico Teórico — Programación sobre Redes
+<div align="center">
+  
+# 🌐 Trabajo Práctico Teórico I - Programación sobre Redes
+
+</div>
 
 <br></br>
 <div align="center">

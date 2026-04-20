@@ -1,6 +1,7 @@
 <div align="center">
   
-# 🌐 Trabajo Práctico Teórico I - Programación sobre Redes
+# 🌐 Trabajo Práctico Teórico I 
+### Programación sobre Redes
 
 </div>
 

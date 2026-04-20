@@ -5,10 +5,10 @@
 
 </div>
 
-<br></br>
+
 <div align="center">
 
-<img src="img/logo-ifts18.png" width="180px">
+<img src="img/logo-ifts18.png" width="190px">
 <br></br>
 
 ## Instituto de Formación Técnica Superior N°18
